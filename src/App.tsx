@@ -1,15 +1,14 @@
 import { FC } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 
 import { Home } from './pages/home'
-import { NotFound } from './pages/not-found'
 
 const App: FC = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   )
