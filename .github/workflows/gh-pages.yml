@@ -27,7 +27,7 @@ jobs:
       - run: npm i -g pnpm@10.10.0
       - run: pnpm i
       - name: Build project
-        run: pnpm build
+        run: pnpm gh-pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
