@@ -16,7 +16,7 @@ export const Hero: FC = () => {
       <div className="absolute top-0">
         <img src={bgImg} alt="Background" />
       </div>
-      <header className="flex flex-col gap-7">
+      <header className="flex flex-col gap-8">
         <h1 className="pointer-events-none relative z-10 flex flex-col justify-center text-[30px] font-semibold md:text-[60px]">
           <span className="animate-fade-in opacity-0">
             Shaping
@@ -46,8 +46,8 @@ export const Hero: FC = () => {
           </span>
         </h1>
         <p className="text-white-50 pointer-events-none relative z-10 md:text-xl">
-          Hi, I&apos;m Rick, a developer based in Beijing with a passion for
-          code.
+          Hi, I&apos;m <span className="text-primary">Rick</span>, a developer
+          based in Beijing with a passion for code.
         </p>
         <Button className="h-12 w-60 md:h-16 md:w-80">See My Work</Button>
       </header>

@@ -8,7 +8,7 @@ export const TitleHeader: FC<PropsWithChildren<Props>> = ({
   sub,
 }) => {
   return (
-    <div className="flex flex-col items-center gap-5 py-24">
+    <div className="mb-24 flex flex-col items-center gap-5">
       {sub && (
         <div className="hero-badge">
           <p>{sub}</p>
