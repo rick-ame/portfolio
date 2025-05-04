@@ -1,16 +1,13 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, ReactNode } from 'react'
 
 interface Props {
-  sub?: string
+  sub?: ReactNode
 }
-export const TitleHeader: FC<PropsWithChildren<Props>> = ({
-  children,
-  sub,
-}) => {
+const TitleHeader: FC<PropsWithChildren<Props>> = ({ children, sub }) => {
   return (
     <div className="mb-24 flex flex-col items-center gap-5">
       {sub && (
-        <div className="hero-badge">
+        <div className="bg-black-200 w-fit rounded-full px-4 py-2 text-sm text-nowrap md:text-base">
           <p>{sub}</p>
         </div>
       )}
@@ -22,3 +19,5 @@ export const TitleHeader: FC<PropsWithChildren<Props>> = ({
     </div>
   )
 }
+
+export default TitleHeader

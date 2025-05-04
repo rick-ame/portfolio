@@ -14,7 +14,7 @@ interface Meteor extends Base {
   delay: number
 }
 
-export const Background: FC = () => {
+const Background: FC = () => {
   const [stars, setStars] = useState<Star[]>([])
   const [meteors, setMeteors] = useState<Meteor[]>([])
 
@@ -68,7 +68,7 @@ export const Background: FC = () => {
       {stars.map((star) => (
         <div
           key={star.id}
-          className="box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4) absolute animate-pulse rounded-full bg-white ease-in-out"
+          className="absolute animate-pulse rounded-full bg-white shadow-[0_0_10px_2px_rgba(255,255,255,0.4)] ease-in-out"
           style={{
             width: star.size + 'px',
             height: star.size + 'px',
@@ -82,7 +82,7 @@ export const Background: FC = () => {
       {meteors.map((meteor) => (
         <div
           key={meteor.id}
-          className="box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3) animate-meteor absolute rounded-full bg-linear-to-r from-white via-gray-200 to-transparent"
+          className="animate-meteor absolute rounded-full bg-linear-to-r from-gray-300 via-gray-500 to-transparent shadow-[0_0_2px_1px_rgba(255,255,255,0.05)]"
           style={{
             width: meteor.size * 30 + 'px',
             height: meteor.size * 1 + 'px',
@@ -96,3 +96,5 @@ export const Background: FC = () => {
     </div>
   )
 }
+
+export default Background

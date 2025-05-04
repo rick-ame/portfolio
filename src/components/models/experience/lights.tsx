@@ -1,6 +1,6 @@
-import * as THREE from 'three'
+import { RectAreaLight } from 'three'
 
-export const Lights = () => (
+const Lights = () => (
   <>
     {/* lamp's light */}
     <spotLight
@@ -28,7 +28,7 @@ export const Lights = () => (
     />
     {/* area light for soft moody fill */}
     <primitive
-      object={new THREE.RectAreaLight('#a259ff', 8, 3, 2)}
+      object={new RectAreaLight('#a259ff', 8, 3, 2)}
       position={[1, 3, 4]}
       rotation={[-Math.PI / 4, Math.PI / 4, 0]}
       intensity={15}
@@ -38,3 +38,5 @@ export const Lights = () => (
     <pointLight position={[1, 2, -2]} intensity={10} color="#0d00a4" />
   </>
 )
+
+export default Lights

@@ -1,3 +1,4 @@
 declare module '@/generated/*' {
-  export const Room: React.FC
+  const Component: React.FC
+  export default Component
 }

@@ -1,13 +1,24 @@
 import { ArrowDown } from 'lucide-react'
-import { FC } from 'react'
+import { FC, lazy, Suspense } from 'react'
 
-import bgImg from '@/assets/images/bg.png'
-import { Experience } from '@/components/models/experience'
-import { words } from '@/config'
+import bgImg from '/images/bg.png'
+import codeImg from '/images/code.svg'
+import conceptsImg from '/images/concepts.svg'
+import designsImg from '/images/designs.svg'
+import ideasImg from '/images/ideas.svg'
 
-import { Button } from './button'
+import Button from './button'
 
-export const Hero: FC = () => {
+const Experience = lazy(() => import('@/components/models/experience'))
+
+const words = [
+  { text: 'Ideas', img: ideasImg },
+  { text: 'Concepts', img: conceptsImg },
+  { text: 'Designs', img: designsImg },
+  { text: 'Code', img: codeImg },
+] as const
+
+const Hero: FC = () => {
   return (
     <section
       id="hero"
@@ -52,7 +63,9 @@ export const Hero: FC = () => {
         <Button className="h-12 w-60 md:h-16 md:w-80">See My Work</Button>
       </header>
       <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
-        <Experience />
+        <Suspense fallback={null}>
+          <Experience />
+        </Suspense>
       </figure>
       <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 animate-bounce flex-col items-center max-xl:hidden">
         <span className="text-white-50 mb-2 text-sm">Scroll</span>
@@ -61,3 +74,5 @@ export const Hero: FC = () => {
     </section>
   )
 }
+
+export default Hero

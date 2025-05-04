@@ -1,10 +1,12 @@
-import { FC } from 'react'
+import { FC, lazy, Suspense } from 'react'
 
-import { Background } from './components/background'
-import { Footer } from './components/footer'
-import { Navbar } from './components/navbar'
-import { About } from './sections/about'
-import { Hero } from './sections/hero'
+import Background from './components/background'
+import Footer from './components/footer'
+import Navbar from './components/navbar'
+import Hero from './sections/hero'
+
+const About = lazy(() => import('./sections/about'))
+const Experience = lazy(() => import('./sections/experience'))
 
 const App: FC = () => {
   return (
@@ -12,7 +14,10 @@ const App: FC = () => {
       <Navbar className="px-6 md:px-20" />
       <main className="px-6 md:px-20 xl:px-32 2xl:px-40">
         <Hero />
-        <About />
+        <Suspense fallback={null}>
+          <About />
+          <Experience />
+        </Suspense>
       </main>
       <Footer className="px-6 md:px-20 xl:px-32 2xl:px-40" />
       <Background />

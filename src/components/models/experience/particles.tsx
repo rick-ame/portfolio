@@ -58,3 +58,5 @@ export const Particles = ({ count = 200 }) => {
     </points>
   )
 }
+
+export default Particles

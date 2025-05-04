@@ -1,14 +1,13 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { FC, Suspense } from 'react'
+import { FC, lazy, Suspense } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-import { Room } from '@/generated/room'
+const Room = lazy(() => import('@/generated/room'))
+const Lights = lazy(() => import('./lights'))
+const Particles = lazy(() => import('./particles'))
 
-import { Lights } from './lights'
-import { Particles } from './particles'
-
-export const Experience: FC = () => {
+const Experience: FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   return (
@@ -36,3 +35,5 @@ export const Experience: FC = () => {
     </Canvas>
   )
 }
+
+export default Experience

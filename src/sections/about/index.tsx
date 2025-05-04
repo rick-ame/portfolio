@@ -1,12 +1,12 @@
 import { Briefcase, Building2, Code } from 'lucide-react'
 import { FC } from 'react'
 
-import { TitleHeader } from '@/components/title-header'
+import Card from '@/components/card'
+import TitleHeader from '@/components/title-header'
 
-import { Card } from './card'
-import { Counter } from './counter'
+import Counter from './counter'
 
-export const About: FC = () => {
+const About: FC = () => {
   return (
     <section id="about" className="mt-0 xl:mt-24">
       <TitleHeader>
@@ -14,7 +14,7 @@ export const About: FC = () => {
       </TitleHeader>
 
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-        <div className="space-y-8 leading-8">
+        <div className="space-y-8 leading-8 2xl:text-xl">
           <h3 className="text-2xl font-semibold">
             Passionate Web Developer & Tech Creator
           </h3>
@@ -30,7 +30,7 @@ export const About: FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 xl:gap-8">
           <Card>
             <div className="flex items-start gap-6">
               <Code className="size-8 text-blue-500" />
@@ -72,3 +72,5 @@ export const About: FC = () => {
     </section>
   )
 }
+
+export default About

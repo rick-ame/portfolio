@@ -5,7 +5,7 @@ import { FC, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export const Counter: FC = () => {
+const Counter: FC = () => {
   const counterRef = useRef<HTMLDivElement>(null)
 
   useGSAP(() => {
@@ -35,3 +35,5 @@ export const Counter: FC = () => {
     </span>
   )
 }
+
+export default Counter

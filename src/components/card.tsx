@@ -1,13 +1,11 @@
-import './index.css'
-
 import { FC, MouseEventHandler, PropsWithChildren, useRef } from 'react'
 
-import starImg from '@/assets/images/star.png'
+import starImg from '/images/star.png'
 
 interface Props {
   stars?: number
 }
-export const Card: FC<PropsWithChildren<Props>> = ({ stars, children }) => {
+const Card: FC<PropsWithChildren<Props>> = ({ stars, children }) => {
   const cardRef = useRef<HTMLDivElement>(null)
 
   const handleMouseMove: MouseEventHandler = (e) => {
@@ -22,11 +20,7 @@ export const Card: FC<PropsWithChildren<Props>> = ({ stars, children }) => {
   }
 
   return (
-    <div
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      className="card border-black-50 bg-black-100 break-inside-avoid-column rounded-xl border p-6"
-    >
+    <div ref={cardRef} onMouseMove={handleMouseMove} className="card">
       {stars && (
         <div className="mb-5 flex items-center gap-1">
           {Array.from({ length: stars }, (_, i) => (
@@ -38,3 +32,5 @@ export const Card: FC<PropsWithChildren<Props>> = ({ stars, children }) => {
     </div>
   )
 }
+
+export default Card

@@ -1,12 +1,30 @@
 import { FC, useEffect, useState } from 'react'
 
-import { navLinks } from '@/config'
 import { cn } from '@/lib/utils'
+
+const navLinks = [
+  {
+    name: 'About',
+    link: '#about',
+  },
+  {
+    name: 'Experience',
+    link: '#experience',
+  },
+  {
+    name: 'Skills',
+    link: '#skills',
+  },
+  {
+    name: 'Projects',
+    link: '#projects',
+  },
+] as const
 
 interface Props {
   className: string
 }
-export const Navbar: FC<Props> = ({ className }) => {
+const Navbar: FC<Props> = ({ className }) => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -22,14 +40,17 @@ export const Navbar: FC<Props> = ({ className }) => {
     <header
       className={cn(
         'fixed z-50 w-full pt-8 pb-4',
-        className,
         scrolled && 'shadow-sm shadow-black backdrop-blur-md',
+        className,
       )}
     >
       <div className="mx-auto flex items-center justify-between">
         <a
           href="#hero"
-          className="text-white-50 text-xl font-semibold transition-transform duration-300 hover:scale-105 md:text-2xl"
+          className={cn(
+            'text-white-50 text-xl font-semibold transition-transform duration-300',
+            'hover:scale-105 md:text-2xl',
+          )}
         >
           Rick
         </a>
@@ -41,14 +62,24 @@ export const Navbar: FC<Props> = ({ className }) => {
                   <span className="transition-colors duration-300 hover:text-white">
                     {name}
                   </span>
-                  <span className="absolute start-0 -bottom-1 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full hover:text-white" />
+                  <span
+                    className={cn(
+                      'absolute start-0 -bottom-1 h-0.5 w-0 bg-white transition-all duration-300',
+                      'group-hover:w-full hover:text-white',
+                    )}
+                  />
                 </a>
               </li>
             ))}
           </ul>
         </nav>
         <a href="#contact" className="group">
-          <div className="bg-black-200 group-hover:bg-primary rounded-lg px-5 py-2 text-white transition-all duration-500">
+          <div
+            className={cn(
+              'bg-black-200 rounded-lg px-5 py-2 text-white transition-all duration-500',
+              'group-hover:bg-primary',
+            )}
+          >
             <span>Contact me</span>
           </div>
         </a>
@@ -56,3 +87,5 @@ export const Navbar: FC<Props> = ({ className }) => {
     </header>
   )
 }
+
+export default Navbar

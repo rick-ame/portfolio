@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 interface Props {
   className: string
 }
-export const Footer: FC<Props> = ({ className }) => {
+const Footer: FC<Props> = ({ className }) => {
   return (
     <footer
       className={cn(
@@ -19,3 +19,5 @@ export const Footer: FC<Props> = ({ className }) => {
     </footer>
   )
 }
+
+export default Footer
