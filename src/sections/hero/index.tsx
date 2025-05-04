@@ -1,36 +1,20 @@
 import { ArrowDown } from 'lucide-react'
-import { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 
-import bgImage from '@/assets/images/hero/bg.png'
+import bgImg from '@/assets/images/bg.png'
 import { Experience } from '@/components/models/experience'
 import { words } from '@/config'
-import { cn } from '@/lib/utils'
 
-const Button: FC<
-  PropsWithChildren<{
-    className: string
-  }>
-> = ({ className, children }) => {
-  return (
-    <a href="" className={cn('relative z-20 cursor-pointer', className)}>
-      <div className="bg-black-200 group relative flex cursor-pointer items-center justify-center overflow-hidden rounded-lg px-4 py-4">
-        <div className="bg-white-50 absolute top-1/2 -right-10 h-[120%] w-[120%] origin-center -translate-y-1/2 rounded-full transition-all duration-500 group-hover:right-10 group-hover:size-10" />
-        <p className="group-hover:text-white-50 -translate-x-5 text-black uppercase transition-all duration-500 group-hover:-translate-x-5 md:text-lg xl:translate-x-0">
-          {children}
-        </p>
-        <div className="absolute top-1/2 right-10 flex size-10 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full">
-          <ArrowDown className="text-primary size-6 translate-y-0 animate-bounce transition-all duration-500 group-hover:translate-y-0 xl:-translate-y-32" />
-        </div>
-      </div>
-    </a>
-  )
-}
+import { Button } from './button'
 
 export const Hero: FC = () => {
   return (
-    <section id="hero" className="relative min-h-dvh pt-36 lg:pt-48">
+    <section
+      id="hero"
+      className="relative min-h-dvh overflow-hidden pt-40 lg:pt-48"
+    >
       <div className="absolute top-0">
-        <img src={bgImage} alt="Background" />
+        <img src={bgImg} alt="Background" />
       </div>
       <header className="flex flex-col gap-7">
         <h1 className="pointer-events-none relative z-10 flex flex-col justify-center text-[30px] font-semibold md:text-[60px]">
@@ -62,12 +46,12 @@ export const Hero: FC = () => {
           </span>
         </h1>
         <p className="text-white-50 pointer-events-none relative z-10 md:text-xl">
-          Hi, I&apos;m Rick, a developer based in Croatia with a passion for
+          Hi, I&apos;m Rick, a developer based in Beijing with a passion for
           code.
         </p>
         <Button className="h-12 w-60 md:h-16 md:w-80">See My Work</Button>
       </header>
-      <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:w-[60%] 2xl:-end-32 2xl:w-[80%]">
+      <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
         <Experience />
       </figure>
       <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 animate-bounce flex-col items-center max-xl:hidden">

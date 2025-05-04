@@ -23,7 +23,7 @@ export const Navbar: FC<Props> = ({ className }) => {
       className={cn(
         'fixed z-50 w-full pt-8 pb-4',
         className,
-        scrolled && 'backdrop-blur-md',
+        scrolled && 'shadow-sm shadow-black backdrop-blur-md',
       )}
     >
       <div className="mx-auto flex items-center justify-between">
