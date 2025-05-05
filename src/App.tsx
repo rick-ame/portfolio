@@ -7,6 +7,7 @@ import Hero from './sections/hero'
 
 const About = lazy(() => import('./sections/about'))
 const Experience = lazy(() => import('./sections/experience'))
+const Skills = lazy(() => import('./sections/skills'))
 
 const App: FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: FC = () => {
         <Suspense fallback={null}>
           <About />
           <Experience />
+          <Skills />
         </Suspense>
       </main>
       <Footer className="px-6 md:px-20 xl:px-32 2xl:px-40" />

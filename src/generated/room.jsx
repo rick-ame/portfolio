@@ -176,4 +176,4 @@ export default function Room(props) {
   )
 }
 
-useGLTF.preload('/models/optimized-room.glb')
+useGLTF.preload(model)

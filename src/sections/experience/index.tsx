@@ -55,7 +55,7 @@ const Experience: FC = () => {
   }, [])
 
   return (
-    <section id="experience" className="mt-36 min-h-[1200px]">
+    <section id="experience" className="mt-36">
       <TitleHeader
         sub={
           <span className="flex items-center gap-1">

@@ -35,6 +35,7 @@ export default tseslint.config(
       'import/no-duplicates': 'error',
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'import/no-unresolved': ['error', { ignore: ['^/.*?url$'] }],
     },
     settings: {
       'import/resolver': {
