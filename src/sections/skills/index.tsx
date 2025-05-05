@@ -46,7 +46,7 @@ const logos: LogoProps[] = [
   {
     logo: expressLogo,
     name: 'Express.js',
-    cls: 'bg-gray-300/80 rounded-full p-1',
+    cls: 'bg-gray-200 rounded-full p-1',
   },
   { logo: gitLogo, name: 'Git' },
   { logo: materialUILogo, name: 'Material UI' },
