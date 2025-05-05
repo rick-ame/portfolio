@@ -18,6 +18,7 @@
   --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
   --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
+  --animate-marquee: marquee 60s linear infinite;
 }
 @keyframes word-slider {
   0% {
@@ -66,6 +67,14 @@
   100% {
     transform: rotate(215deg) translateX(-500px);
     opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
   }
 }
 
@@ -124,5 +133,28 @@
       #fd5c79 62.83%,
       #6d45ce 92.91%
     );
+  }
+
+  .logos {
+    .gradient-edge {
+      @apply absolute bottom-0 z-20 h-full w-36;
+    }
+    .gradient-edge:nth-of-type(1) {
+      left: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    .gradient-edge:nth-of-type(2) {
+      right: 0;
+      background: linear-gradient(
+        -90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
   }
 }
