@@ -9,7 +9,7 @@ const Projects: FC = () => {
       <TitleHeader
         sub={
           <span className="flex items-center gap-2">
-            <FolderGit2 className="size-5 text-red-600" />
+            <FolderGit2 className="text-primary size-5" />
             Live Demo
           </span>
         }

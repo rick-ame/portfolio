@@ -106,7 +106,7 @@ const Experience: FC = () => {
                 <MonitorCheck />
               </div>
               <div className="exp-text">
-                <h1 className="text-3xl font-semibold">Frontend</h1>
+                <h1 className="text-3xl font-semibold">Backend</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
                 <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5">
                   <li className="text-lg"></li>
@@ -127,7 +127,7 @@ const Experience: FC = () => {
                 <MonitorCheck />
               </div>
               <div className="exp-text">
-                <h1 className="text-3xl font-semibold">Frontend</h1>
+                <h1 className="text-3xl font-semibold">Tools</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
                 <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5">
                   <li className="text-lg"></li>
