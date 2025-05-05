@@ -1,6 +1,6 @@
 import { FC, MouseEventHandler, PropsWithChildren, useRef } from 'react'
 
-import starImg from '/images/star.png'
+import starImg from '@/assets/images/star.png'
 
 interface Props {
   stars?: number

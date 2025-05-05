@@ -9,7 +9,7 @@ import { EffectComposer, SelectiveBloom } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'
 import * as THREE from 'three'
 import model from '/models/optimized-room.glb?url'
-import texture from '/images/textures/mat1.png?url'
+import texture from '/textures/mat1.png?url'
 
 export default function Room(props) {
   const { nodes, materials } = useGLTF(model)

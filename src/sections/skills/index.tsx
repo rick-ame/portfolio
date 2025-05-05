@@ -68,7 +68,7 @@ const Skills: FC = () => {
     <section id="skills" className="mt-36">
       <TitleHeader
         sub={
-          <span className="flex items-center gap-1">
+          <span className="flex items-center gap-2">
             <Handshake className="size-5 text-yellow-500" />
             What I Bring to the Table
           </span>

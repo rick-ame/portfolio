@@ -1,11 +1,11 @@
 import { ArrowDown } from 'lucide-react'
 import { FC, lazy, Suspense } from 'react'
 
-import bgImg from '/images/bg.png'
-import codeImg from '/images/code.svg'
-import conceptsImg from '/images/concepts.svg'
-import designsImg from '/images/designs.svg'
-import ideasImg from '/images/ideas.svg'
+import bgImg from '@/assets/images/bg.png'
+import codeImg from '@/assets/images/code.svg'
+import conceptsImg from '@/assets/images/concepts.svg'
+import designsImg from '@/assets/images/designs.svg'
+import ideasImg from '@/assets/images/ideas.svg'
 
 import Button from './button'
 
@@ -60,7 +60,7 @@ const Hero: FC = () => {
           Hi, I&apos;m <span className="text-primary">Rick</span>, a developer
           based in Beijing with a passion for code.
         </p>
-        <Button className="h-12 w-60 md:h-16 md:w-80">See My Work</Button>
+        <Button />
       </header>
       <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
         <Suspense fallback={null}>

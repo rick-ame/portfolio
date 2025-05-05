@@ -58,7 +58,7 @@ const Experience: FC = () => {
     <section id="experience" className="mt-36">
       <TitleHeader
         sub={
-          <span className="flex items-center gap-1">
+          <span className="flex items-center gap-2">
             <BriefcaseBusiness className="size-5 text-amber-700" />
             TechStack Path
           </span>
