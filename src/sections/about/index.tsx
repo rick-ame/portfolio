@@ -8,7 +8,7 @@ import Counter from './counter'
 
 const About: FC = () => {
   return (
-    <section id="about" className="mt-0 xl:mt-24">
+    <section id="about" className="mt-24">
       <TitleHeader>
         About <span className="text-primary">Me</span>
       </TitleHeader>

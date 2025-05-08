@@ -16,7 +16,6 @@ const Experience: FC = () => {
       <OrbitControls
         enablePan={false}
         enableZoom={false}
-        enableRotate={!isMobile}
         maxDistance={20}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}

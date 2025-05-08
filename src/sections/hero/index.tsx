@@ -64,7 +64,8 @@ const Hero: FC = () => {
         <Button />
       </header>
       <ErrorBoundary fallback={null}>
-        <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
+        <figure className="relative -mt-32 h-[750px] w-full md:-end-24 xl:absolute xl:-end-36 xl:top-32 xl:w-[60%] 2xl:w-[70%]">
+          <div className="absolute inset-0 z-10 sm:hidden"></div>
           <Suspense>
             <Experience />
           </Suspense>
