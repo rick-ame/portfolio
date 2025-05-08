@@ -15,9 +15,9 @@ const App: FC = () => {
   return (
     <>
       <Navbar className="px-6 md:px-20" />
-      <main className="px-6 md:px-20 xl:px-32 2xl:px-40">
+      <main className="px-6 tracking-wider md:px-20 xl:px-32 2xl:px-40">
         <Hero />
-        <Suspense fallback={null}>
+        <Suspense>
           <About />
           <Experience />
           <Skills />

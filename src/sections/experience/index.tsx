@@ -74,9 +74,18 @@ const Experience: FC = () => {
         <div className="space-y-10 xl:space-y-32">
           <div className="flex justify-between max-xl:flex-col-reverse">
             <div className="relative z-40 xl:w-[40%]">
-              <div className="timeline-card xl:me-10">
+              <div className="timeline-card text-white-50 xl:me-10">
                 <Card stars={5}>
-                  <p className="text-white-50">Some text here</p>
+                  <p className="mb-4">
+                    Optimized web applications for maximum speed and
+                    scalability. By using modern technology, has greatly
+                    streamlined the development workflow and standardized
+                    version control for both development and deployment.
+                  </p>
+                  <p>
+                    Key words: Vue, React, Redux, Zustand, Tailwind CSS,
+                    Typescript
+                  </p>
                 </Card>
               </div>
             </div>
@@ -87,8 +96,18 @@ const Experience: FC = () => {
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Frontend</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
-                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5">
-                  <li className="text-lg"></li>
+                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5 text-lg">
+                  <li>
+                    Collaborated closely with UI/UX designers to ensure seamless
+                    user experiences.
+                  </li>
+                  <li>
+                    Adopted modern front-end technology frameworks such as Vue
+                    and React, and integrated state management tools.
+                  </li>
+                  <li>
+                    Used the Webpack build tool, integrated with Jenkins CI/CD,
+                  </li>
                 </ul>
               </div>
             </div>
@@ -108,8 +127,11 @@ const Experience: FC = () => {
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Backend</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
-                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5">
-                  <li className="text-lg"></li>
+                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5 text-lg">
+                  <li>
+                    Worked with backend engineers to integrate APIs seamlessly
+                    with the frontend.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -118,7 +140,10 @@ const Experience: FC = () => {
             <div className="relative z-40 xl:w-[40%]">
               <div className="timeline-card xl:me-10">
                 <Card stars={5}>
-                  <p className="text-white-50">Some text here</p>
+                  <p className="text-white-50">
+                    开发webpack以及eslint插件,前后端分离接口规范,配置nginx环境,docker容器化部署,配合运维迁移aws
+                    s3.
+                  </p>
                 </Card>
               </div>
             </div>
@@ -129,8 +154,8 @@ const Experience: FC = () => {
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Tools</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
-                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5">
-                  <li className="text-lg"></li>
+                <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5 text-lg">
+                  <li></li>
                 </ul>
               </div>
             </div>

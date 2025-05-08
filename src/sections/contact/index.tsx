@@ -1,9 +1,11 @@
 import { Mail, MessageCircleCode } from 'lucide-react'
-import { FC } from 'react'
+import { FC, lazy, Suspense } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 
 import icons from '@/components/icons'
-import ContactModel from '@/components/models/contact'
 import TitleHeader from '@/components/title-header'
+
+const ContactModel = lazy(() => import('@/components/models/contact'))
 
 const Contact: FC = () => {
   return (
@@ -40,9 +42,13 @@ const Contact: FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-full overflow-hidden rounded-3xl bg-[#cd7c2e] hover:cursor-grab md:size-80 lg:size-120 xl:size-160">
-            <ContactModel />
-          </div>
+          <ErrorBoundary fallback={null}>
+            <div className="w-full overflow-hidden rounded-3xl bg-[#cd7c2e] hover:cursor-grab md:size-80 lg:size-120 xl:size-160">
+              <Suspense>
+                <ContactModel />
+              </Suspense>
+            </div>
+          </ErrorBoundary>
         </div>
       </div>
     </section>

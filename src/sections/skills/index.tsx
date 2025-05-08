@@ -1,5 +1,6 @@
 import { Handshake } from 'lucide-react'
 import { FC, lazy, Suspense } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 
 import antDesignLogo from '@/assets/logos/ant-design.svg'
 import dockerLogo from '@/assets/logos/docker.svg'
@@ -76,9 +77,11 @@ const Skills: FC = () => {
       >
         How I Can Contribute & My Key Skills
       </TitleHeader>
-      <Suspense fallback={<div className="h-[648px] md:h-50"></div>}>
-        <TechCards />
-      </Suspense>
+      <ErrorBoundary fallback={null}>
+        <Suspense fallback={<div className="h-[648px] md:h-50"></div>}>
+          <TechCards />
+        </Suspense>
+      </ErrorBoundary>
       <div className="relative my-20 md:my-30">
         <div className="logos-gradient-edge" />
         <div className="logos-gradient-edge" />

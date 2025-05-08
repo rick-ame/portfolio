@@ -1,5 +1,6 @@
 import { ArrowDown } from 'lucide-react'
 import { FC, lazy, Suspense } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 
 import bgImg from '@/assets/images/bg.png'
 import codeImg from '@/assets/images/code.svg'
@@ -62,11 +63,13 @@ const Hero: FC = () => {
         </p>
         <Button />
       </header>
-      <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
-        <Suspense fallback={null}>
-          <Experience />
-        </Suspense>
-      </figure>
+      <ErrorBoundary fallback={null}>
+        <figure className="-end-24 top-32 -mt-32 h-[750px] w-full xl:absolute xl:-end-36 xl:w-[60%] 2xl:w-[70%]">
+          <Suspense>
+            <Experience />
+          </Suspense>
+        </figure>
+      </ErrorBoundary>
       <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 animate-bounce flex-col items-center max-xl:hidden">
         <span className="text-white-50 mb-2 text-sm">Scroll</span>
         <ArrowDown className="text-primary size-5" />

@@ -14,7 +14,7 @@ const Projects: FC = () => {
           </span>
         }
       >
-        Some Projects of Mine
+        My Personal Projects
       </TitleHeader>
     </section>
   )
