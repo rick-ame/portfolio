@@ -77,10 +77,10 @@ const Experience: FC = () => {
               <div className="timeline-card text-white-50 xl:me-10">
                 <Card stars={5}>
                   <p className="mb-4">
-                    Optimized web applications for maximum speed and
-                    scalability. By using modern technology, has greatly
-                    streamlined the development workflow and standardized
-                    version control for both development and deployment.
+                    Optimize web applications for maximum speed and scalability.
+                    By using modern technology, has greatly streamlined the
+                    development workflow and standardized version control for
+                    both development and deployment.
                   </p>
                   <p>
                     Key words: Vue, React, Redux, Zustand, Tailwind CSS,
@@ -114,9 +114,12 @@ const Experience: FC = () => {
           </div>
           <div className="flex justify-between max-xl:flex-col-reverse">
             <div className="relative z-40 xl:w-[40%]">
-              <div className="timeline-card xl:me-10">
+              <div className="timeline-card text-white-50 xl:me-10">
                 <Card stars={5}>
-                  <p className="text-white-50">Some text here</p>
+                  <p className="mb-4">
+                    Working on Express.js to extend knowledge to backend.
+                  </p>
+                  <p>Key words: Node.js, Express.js, MongoDB</p>
                 </Card>
               </div>
             </div>
@@ -138,12 +141,15 @@ const Experience: FC = () => {
           </div>
           <div className="flex justify-between max-xl:flex-col-reverse">
             <div className="relative z-40 xl:w-[40%]">
-              <div className="timeline-card xl:me-10">
+              <div className="timeline-card text-white-50 xl:me-10">
                 <Card stars={5}>
-                  <p className="text-white-50">
-                    开发webpack以及eslint插件,前后端分离接口规范,配置nginx环境,docker容器化部署,配合运维迁移aws
-                    s3.
+                  <p className="mb-4">
+                    Develop Webpack and ESLint plugins, establish
+                    frontend-backend separation interface standards, configure
+                    Nginx environments, containerize deployment with Docker, and
+                    collaborate with DevOps to migrate to AWS S3.
                   </p>
+                  <p>Key words: Webpack, ESLint, Vite</p>
                 </Card>
               </div>
             </div>
@@ -155,7 +161,9 @@ const Experience: FC = () => {
                 <h1 className="text-3xl font-semibold">Tools</h1>
                 <p className="text-[#839cb5] italic">Responsibilities</p>
                 <ul className="text-white-50 ms-5 mt-5 flex list-disc flex-col gap-5 text-lg">
-                  <li></li>
+                  <li>
+                    Developed ESLint plugins adding dependency hints for ahooks.
+                  </li>
                 </ul>
               </div>
             </div>
