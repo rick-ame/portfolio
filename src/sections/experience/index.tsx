@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { BriefcaseBusiness, MonitorCheck } from 'lucide-react'
+import { BriefcaseBusiness, Cog, MonitorCheck, Server } from 'lucide-react'
 import { FC } from 'react'
 
 import Card from '@/components/card'
@@ -90,8 +90,8 @@ const Experience: FC = () => {
               </div>
             </div>
             <div className="flex gap-2 md:gap-6 xl:w-[60%] xl:gap-10">
-              <div className="border-black-50 bg-black-100 z-20 flex size-10 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
-                <MonitorCheck />
+              <div className="border-black-50 bg-black-100 z-20 flex size-10 shrink-0 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
+                <MonitorCheck className="size-4 md:size-8" />
               </div>
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Frontend</h1>
@@ -124,8 +124,8 @@ const Experience: FC = () => {
               </div>
             </div>
             <div className="flex gap-2 md:gap-6 xl:w-[60%] xl:gap-10">
-              <div className="border-black-50 bg-black-100 z-20 flex size-10 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
-                <MonitorCheck />
+              <div className="border-black-50 bg-black-100 z-20 flex size-10 shrink-0 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
+                <Server className="size-4 md:size-8" />
               </div>
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Backend</h1>
@@ -154,8 +154,8 @@ const Experience: FC = () => {
               </div>
             </div>
             <div className="flex gap-2 md:gap-6 xl:w-[60%] xl:gap-10">
-              <div className="border-black-50 bg-black-100 z-20 flex size-10 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
-                <MonitorCheck />
+              <div className="border-black-50 bg-black-100 z-20 flex size-10 shrink-0 items-center justify-center rounded-full border md:size-20 md:-translate-y-7">
+                <Cog className="size-5 md:size-10" />
               </div>
               <div className="exp-text">
                 <h1 className="text-3xl font-semibold">Tools</h1>

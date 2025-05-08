@@ -78,7 +78,7 @@ const Skills: FC = () => {
         How I Can Contribute & My Key Skills
       </TitleHeader>
       <ErrorBoundary fallback={null}>
-        <Suspense fallback={<div className="h-[648px] md:h-50"></div>}>
+        <Suspense>
           <TechCards />
         </Suspense>
       </ErrorBoundary>
