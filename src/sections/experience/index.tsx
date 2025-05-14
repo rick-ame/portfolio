@@ -84,7 +84,7 @@ const Experience: FC = () => {
                   </p>
                   <p>
                     Key words: Vue, React, Redux, Zustand, Tailwind CSS,
-                    Typescript
+                    Typescript.
                   </p>
                 </Card>
               </div>
@@ -107,6 +107,7 @@ const Experience: FC = () => {
                   </li>
                   <li>
                     Used the Webpack build tool, integrated with Jenkins CI/CD,
+                    streamlined the development workflow.
                   </li>
                 </ul>
               </div>
@@ -117,9 +118,14 @@ const Experience: FC = () => {
               <div className="timeline-card text-white-50 xl:me-10">
                 <Card stars={5}>
                   <p className="mb-4">
-                    Working on Express.js to extend knowledge to backend.
+                    Build robust server-side applications using Node.js and
+                    Express.js. Develop RESTful APIs and utilizes databases like
+                    MongoDB for data management, gaining extensive backend
+                    experience.
                   </p>
-                  <p>Key words: Node.js, Express.js, MongoDB</p>
+                  <p>
+                    Key words: Node.js, Express.js, Next.js, MongoDB, Prisma.
+                  </p>
                 </Card>
               </div>
             </div>
@@ -135,6 +141,11 @@ const Experience: FC = () => {
                     Worked with backend engineers to integrate APIs seamlessly
                     with the frontend.
                   </li>
+                  <li>Used Next.js to explore full stack App.</li>
+                  <li>
+                    Used Prisma and mongoose as ORM to manipulate MongoDB for
+                    persistent storage of the data.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -145,11 +156,13 @@ const Experience: FC = () => {
                 <Card stars={5}>
                   <p className="mb-4">
                     Develop Webpack and ESLint plugins, establish
-                    frontend-backend separation interface standards, configure
-                    Nginx environments, containerize deployment with Docker, and
-                    collaborate with DevOps to migrate to AWS S3.
+                    frontend-backend separation interface standards, employ
+                    modern development tools and practices to boost
+                    productivity. Containerize deployment with Docker, and
+                    collaborate with DevOps to migrate frontend resources to AWS
+                    S3.
                   </p>
-                  <p>Key words: Webpack, ESLint, Vite</p>
+                  <p>Key words: Webpack, ESLint, Vite, Docker</p>
                 </Card>
               </div>
             </div>
@@ -164,6 +177,11 @@ const Experience: FC = () => {
                   <li>
                     Developed ESLint plugins adding dependency hints for ahooks.
                   </li>
+                  <li>
+                    Developed Webpack plugins for JSP project integrating with
+                    separation of front and back ends.
+                  </li>
+                  <li>Implemented Github/Gitlab CI/CD for Automation jobs.</li>
                 </ul>
               </div>
             </div>

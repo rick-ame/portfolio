@@ -10,7 +10,7 @@ const Projects: FC = () => {
         sub={
           <span className="flex items-center gap-2">
             <FolderGit2 className="text-primary size-5" />
-            Live Demo
+            Show Me the Code
           </span>
         }
       >
