@@ -13,7 +13,7 @@ const Footer: FC<Props> = ({ className }) => {
         className,
       )}
     >
-      <p className="text-muted-foreground text-end">
+      <p className="text-muted-foreground text-center">
         &copy; {new Date().getFullYear()} Rick. All rights reserved.
       </p>
     </footer>

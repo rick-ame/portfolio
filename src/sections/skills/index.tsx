@@ -30,7 +30,7 @@ interface LogoProps {
 const Logo: FC<LogoProps> = ({ logo, name, cls }) => {
   return (
     <img
-      className={cn('me-28 size-15', cls)}
+      className={cn('me-12 size-15 md:me-24', cls)}
       src={logo}
       alt={`${name} Logo`}
       title={name}
