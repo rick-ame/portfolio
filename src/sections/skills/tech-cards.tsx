@@ -3,9 +3,9 @@ import { useGLTF } from '@react-three/drei'
 import gsap from 'gsap'
 import { FC } from 'react'
 
-import gitModel from '/models/git-transformed.glb?url'
-import nodejsModel from '/models/node-transformed.glb?url'
-import reactModel from '/models/react-transformed.glb?url'
+import gitModel from '/models/git-model.glb?url'
+import nodejsModel from '/models/node-model.glb?url'
+import reactModel from '/models/react-model.glb?url'
 import Tech from '@/components/models/tech'
 
 useGLTF.preload(reactModel)

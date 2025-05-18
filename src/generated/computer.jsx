@@ -1,5 +1,5 @@
 import { useGLTF } from '@react-three/drei'
-import model from '/models/computer-optimized-transformed.glb?url'
+import model from '/models/computer-model.glb?url'
 
 export function Computer(props) {
   const { nodes, materials } = useGLTF(model)
