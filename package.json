@@ -9,7 +9,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "gh-pages": "vite build --base=/portfolio/"
+    "gh-pages": "vite build --base=/portfolio/",
+    "postinstall": "pnpm simple-git-hooks"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

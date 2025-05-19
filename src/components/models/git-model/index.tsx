@@ -1,15 +1,10 @@
-import { Environment, Float, OrbitControls, useGLTF } from '@react-three/drei'
+import { Environment, Float, OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { FC } from 'react'
 
-interface Props {
-  modelPath: string
-  scale: number
-  rotation: [number, number, number]
-}
-const Tech: FC<Props> = ({ modelPath, scale, rotation }) => {
-  const scene = useGLTF(modelPath)
+import Git from '@/generated/git'
 
+const GitModel: FC = () => {
   return (
     <Canvas>
       <ambientLight intensity={0.3} />
@@ -23,8 +18,8 @@ const Tech: FC<Props> = ({ modelPath, scale, rotation }) => {
       <Environment preset="city" />
 
       <Float speed={6} rotationIntensity={0.5} floatIntensity={0.9}>
-        <group scale={scale} rotation={rotation}>
-          <primitive object={scene.scene} />
+        <group scale={0.05} rotation={[0, -Math.PI / 4, 0]}>
+          <Git />
         </group>
       </Float>
 
@@ -33,4 +28,4 @@ const Tech: FC<Props> = ({ modelPath, scale, rotation }) => {
   )
 }
 
-export default Tech
+export default GitModel

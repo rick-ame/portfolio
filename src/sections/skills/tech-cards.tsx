@@ -1,16 +1,10 @@
 import { useGSAP } from '@gsap/react'
-import { useGLTF } from '@react-three/drei'
 import gsap from 'gsap'
 import { FC } from 'react'
 
-import gitModel from '/models/git-model.glb?url'
-import nodejsModel from '/models/node-model.glb?url'
-import reactModel from '/models/react-model.glb?url'
-import Tech from '@/components/models/tech'
-
-useGLTF.preload(reactModel)
-useGLTF.preload(nodejsModel)
-useGLTF.preload(gitModel)
+import GitModel from '@/components/models/git-model'
+import NodeModel from '@/components/models/node-model'
+import ReactModel from '@/components/models/react-model'
 
 const TechCards: FC = () => {
   useGSAP(() => {
@@ -39,27 +33,19 @@ const TechCards: FC = () => {
       <div className="border-black-50 bg-black-100 tech-card group relative size-50 overflow-hidden rounded-full border">
         <div className="absolute bottom-[-100%] left-0 h-full w-full bg-[#2D3240] transition-all duration-500 group-hover:bottom-0" />
         <div className="flex size-50 items-center justify-center">
-          <Tech modelPath={reactModel} scale={1} rotation={[0, 0, 0]} />
+          <ReactModel />
         </div>
       </div>
       <div className="border-black-50 bg-black-100 tech-card group relative size-50 overflow-hidden rounded-full border">
         <div className="absolute bottom-[-100%] left-0 h-full w-full bg-[#2D3240] transition-all duration-500 group-hover:bottom-0" />
         <div className="flex size-50 items-center justify-center">
-          <Tech
-            modelPath={nodejsModel}
-            scale={5}
-            rotation={[0, -Math.PI / 2, 0]}
-          />
+          <NodeModel />
         </div>
       </div>
       <div className="border-black-50 bg-black-100 tech-card group relative size-50 overflow-hidden rounded-full border">
         <div className="absolute bottom-[-100%] left-0 h-full w-full bg-[#2D3240] transition-all duration-500 group-hover:bottom-0" />
         <div className="flex size-50 items-center justify-center">
-          <Tech
-            modelPath={gitModel}
-            scale={0.05}
-            rotation={[0, -Math.PI / 4, 0]}
-          />
+          <GitModel />
         </div>
       </div>
     </div>

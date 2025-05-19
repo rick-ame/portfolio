@@ -11,7 +11,7 @@ import * as THREE from 'three'
 import model from '/models/room-model.glb?url'
 import texture from '/textures/mat1.png?url'
 
-export default function Room(props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF(model)
   const screensRef = useRef()
   const matcapTexture = useTexture(texture)

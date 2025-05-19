@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei'
 import model from '/models/computer-model.glb?url'
 
-export function Computer(props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF(model)
 
   return (
@@ -25,5 +25,3 @@ export function Computer(props) {
 }
 
 useGLTF.preload(model)
-
-export default Computer
