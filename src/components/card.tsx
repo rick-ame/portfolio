@@ -28,7 +28,7 @@ const Card: FC<PropsWithChildren<Props>> = ({ stars, children }) => {
           ))}
         </div>
       )}
-      {children}
+      <div className="relative z-10">{children}</div>
     </div>
   )
 }
