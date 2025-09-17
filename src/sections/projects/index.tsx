@@ -51,7 +51,7 @@ const Projects: FC = () => {
         </Card>
         <Card>
           <div className="flex items-start gap-6">
-            <ServerCog className="size-6 text-orange-500" />
+            <ServerCog className="size-8 text-orange-500" />
             <div className="flex-1">
               <h4 className="text-lg font-semibold">Nest.js API</h4>
               <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
@@ -81,7 +81,7 @@ const Projects: FC = () => {
         </Card>
         <Card>
           <div className="flex items-start gap-6">
-            <MessageCircleCode className="size-6 text-green-500" />
+            <MessageCircleCode className="size-8 text-green-500" />
             <div className="flex-1">
               <h4 className="text-lg font-semibold">Fullstack Chat</h4>
               <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
